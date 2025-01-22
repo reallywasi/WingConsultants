@@ -27,7 +27,7 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-neutral-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp">
-            <div className="h-16 w-16 bg-blue-600 rounded-lg flex items-center justify-center mb-6">
+            <div className="h-16 w-16 bg-yellow-600 rounded-lg flex items-center justify-center mb-6">
               <svg
                 className="h-8 w-8 text-white"
                 fill="none"
@@ -50,7 +50,7 @@ export default function Home() {
             <ul className="space-y-2 text-gray-600">
               <li className="flex items-center">
                 <svg
-                  className="h-5 w-5 text-blue-600 mr-2"
+                  className="h-5 w-5 text-yellow-600 mr-2"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -66,7 +66,7 @@ export default function Home() {
               </li>
               <li className="flex items-center">
                 <svg
-                  className="h-5 w-5 text-blue-600 mr-2"
+                  className="h-5 w-5 text-yellow-600 mr-2"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -82,7 +82,7 @@ export default function Home() {
               </li>
               <li className="flex items-center">
                 <svg
-                  className="h-5 w-5 text-blue-600 mr-2"
+                  className="h-5 w-5 text-yellow-600 mr-2"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -100,7 +100,7 @@ export default function Home() {
           </div>
 
           <div className="bg-neutral-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp animate__delay-1s">
-            <div className="h-16 w-16 bg-blue-600 rounded-lg flex items-center justify-center mb-6">
+            <div className="h-16 w-16 bg-yellow-600 rounded-lg flex items-center justify-center mb-6">
               <svg
                 className="h-8 w-8 text-white"
                 fill="none"
@@ -122,7 +122,7 @@ export default function Home() {
             <ul className="space-y-2 text-gray-600">
               <li className="flex items-center">
                 <svg
-                  className="h-5 w-5 text-blue-600 mr-2"
+                  className="h-5 w-5 text-yellow-600 mr-2"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -138,7 +138,7 @@ export default function Home() {
               </li>
               <li className="flex items-center">
                 <svg
-                  className="h-5 w-5 text-blue-600 mr-2"
+                  className="h-5 w-5 text-yellow-600 mr-2"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -154,7 +154,7 @@ export default function Home() {
               </li>
               <li className="flex items-center">
                 <svg
-                  className="h-5 w-5 text-blue-600 mr-2"
+                  className="h-5 w-5 text-yellow-600 mr-2"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -172,7 +172,7 @@ export default function Home() {
           </div>
 
           <div className="bg-neutral-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp animate__delay-2s">
-            <div className="h-16 w-16 bg-blue-600 rounded-lg flex items-center justify-center mb-6">
+            <div className="h-16 w-16 bg-yellow-600 rounded-lg flex items-center justify-center mb-6">
               <svg
                 className="h-8 w-8 text-white"
                 fill="none"
@@ -194,7 +194,7 @@ export default function Home() {
             <ul className="space-y-2 text-gray-600">
               <li className="flex items-center">
                 <svg
-                  className="h-5 w-5 text-blue-600 mr-2"
+                  className="h-5 w-5 text-yellow-600 mr-2"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -210,7 +210,7 @@ export default function Home() {
               </li>
               <li className="flex items-center">
                 <svg
-                  className="h-5 w-5 text-blue-600 mr-2"
+                  className="h-5 w-5 text-yellow-600 mr-2"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -226,7 +226,7 @@ export default function Home() {
               </li>
               <li className="flex items-center">
                 <svg
-                  className="h-5 w-5 text-blue-600 mr-2"
+                  className="h-5 w-5 text-yellow-600 mr-2"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -258,7 +258,7 @@ export default function Home() {
 
         <div className="relative">
           {/* Process Timeline Line */}
-          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-200"></div>
+          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-yellow-200"></div>
 
           {/* Process Steps */}
           <div className="space-y-12">
@@ -266,11 +266,11 @@ export default function Home() {
             <div className="relative flex flex-col md:flex-row items-center animate__animated animate__fadeInLeft">
               <div className="flex-1 md:text-right md:pr-12 mb-4 md:mb-0">
                 <div className="bg-neutral-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-                  <h3 className="text-xl font-bold text-blue-600 mb-2">Profile Submission</h3>
+                  <h3 className="text-xl font-bold text-yellow-600 mb-2">Profile Submission</h3>
                   <p className="text-gray-600">Candidates submit their resumes and complete their profiles with relevant experience and skills.</p>
                 </div>
               </div>
-              <div className="md:absolute md:left-1/2 md:transform md:-translate-x-1/2 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10">
+              <div className="md:absolute md:left-1/2 md:transform md:-translate-x-1/2 w-12 h-12 bg-yellow-600 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10">
                 1
               </div>
               <div className="flex-1 md:pl-12 hidden md:block"></div>
@@ -279,12 +279,12 @@ export default function Home() {
             {/* Step 2 */}
             <div className="relative flex flex-col md:flex-row items-center animate__animated animate__fadeInRight">
               <div className="flex-1 md:text-right md:pr-12 hidden md:block"></div>
-              <div className="md:absolute md:left-1/2 md:transform md:-translate-x-1/2 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10">
+              <div className="md:absolute md:left-1/2 md:transform md:-translate-x-1/2 w-12 h-12 bg-yellow-600 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10">
                 2
               </div>
               <div className="flex-1 md:pl-12 mb-4 md:mb-0">
                 <div className="bg-neutral-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-                  <h3 className="text-xl font-bold text-blue-600 mb-2">Initial Screening</h3>
+                  <h3 className="text-xl font-bold text-yellow-600 mb-2">Initial Screening</h3>
                   <p className="text-gray-600">Our team reviews applications and conducts preliminary assessments of candidates' qualifications.</p>
                 </div>
               </div>
@@ -294,11 +294,11 @@ export default function Home() {
             <div className="relative flex flex-col md:flex-row items-center animate__animated animate__fadeInLeft">
               <div className="flex-1 md:text-right md:pr-12 mb-4 md:mb-0">
                 <div className="bg-neutral-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-                  <h3 className="text-xl font-bold text-blue-600 mb-2">Technical Assessment</h3>
+                  <h3 className="text-xl font-bold text-yellow-600 mb-2">Technical Assessment</h3>
                   <p className="text-gray-600">Selected candidates complete technical evaluations and coding challenges specific to their roles.</p>
                 </div>
               </div>
-              <div className="md:absolute md:left-1/2 md:transform md:-translate-x-1/2 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10">
+              <div className="md:absolute md:left-1/2 md:transform md:-translate-x-1/2 w-12 h-12 bg-yellow-600 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10">
                 3
               </div>
               <div className="flex-1 md:pl-12 hidden md:block"></div>
@@ -307,12 +307,12 @@ export default function Home() {
             {/* Step 4 */}
             <div className="relative flex flex-col md:flex-row items-center animate__animated animate__fadeInRight">
               <div className="flex-1 md:text-right md:pr-12 hidden md:block"></div>
-              <div className="md:absolute md:left-1/2 md:transform md:-translate-x-1/2 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10">
+              <div className="md:absolute md:left-1/2 md:transform md:-translate-x-1/2 w-12 h-12 bg-yellow-600 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10">
                 4
               </div>
               <div className="flex-1 md:pl-12 mb-4 md:mb-0">
                 <div className="bg-neutral-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-                  <h3 className="text-xl font-bold text-blue-600 mb-2">Interview Process</h3>
+                  <h3 className="text-xl font-bold text-yellow-600 mb-2">Interview Process</h3>
                   <p className="text-gray-600">Successful candidates proceed to technical and cultural fit interviews with potential employers.</p>
                 </div>
               </div>
@@ -322,11 +322,11 @@ export default function Home() {
             <div className="relative flex flex-col md:flex-row items-center animate__animated animate__fadeInLeft">
               <div className="flex-1 md:text-right md:pr-12 mb-4 md:mb-0">
                 <div className="bg-neutral-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-                  <h3 className="text-xl font-bold text-blue-600 mb-2">Offer & Placement</h3>
+                  <h3 className="text-xl font-bold text-yellow-600 mb-2">Offer & Placement</h3>
                   <p className="text-gray-600">Final selection, offer negotiation, and successful placement with the client company.</p>
                 </div>
               </div>
-              <div className="md:absolute md:left-1/2 md:transform md:-translate-x-1/2 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10">
+              <div className="md:absolute md:left-1/2 md:transform md:-translate-x-1/2 w-12 h-12 bg-yellow-600 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10">
                 5
               </div>
               <div className="flex-1 md:pl-12 hidden md:block"></div>
@@ -337,7 +337,7 @@ export default function Home() {
         <div className="text-center mt-16">
           <a
             href="#candidateportal"
-            className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300 animate__animated animate__pulse animate__infinite"
+            className="inline-flex items-center bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300 animate__animated animate__pulse animate__infinite"
           >
             Start Your Journey
             <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -367,7 +367,7 @@ export default function Home() {
           <div class="space-y-6">
             <div class="flex items-start">
               <div class="flex-shrink-0">
-                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-yellow-600 text-white">
                   <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                   </svg>
@@ -382,7 +382,7 @@ export default function Home() {
 
             <div class="flex items-start">
               <div class="flex-shrink-0">
-                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-yellow-600 text-white">
                   <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                   </svg>
@@ -397,7 +397,7 @@ export default function Home() {
 
             <div class="flex items-start">
               <div class="flex-shrink-0">
-                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-yellow-600 text-white">
                   <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
@@ -422,7 +422,7 @@ export default function Home() {
         type="text"
         required
         placeholder="Enter your first name"
-        className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+        className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500"
       />
     </div>
 
@@ -432,7 +432,7 @@ export default function Home() {
         type="text"
         required
         placeholder="Enter your last name"
-        className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+        className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500"
       />
     </div>
   </div>
@@ -443,7 +443,7 @@ export default function Home() {
       type="email"
       required
       placeholder="Enter your email"
-      className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+      className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500"
     />
   </div>
 
@@ -451,7 +451,7 @@ export default function Home() {
     <label className="block text-sm font-medium text-gray-700">Subject*</label>
     <select
       required
-      className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+      className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500"
     >
       <option value="">Select a subject</option>
       <option value="hiring">Hiring Inquiry</option>
@@ -466,13 +466,13 @@ export default function Home() {
     <textarea
       rows="4"
       required
-      className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+      className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500"
     ></textarea>
   </div>
 
   <button
     type="submit"
-    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300 animate__animated animate__pulse animate__infinite"
+    className="w-full bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300 animate__animated animate__pulse animate__infinite"
   >
     Send Message
   </button>
@@ -596,12 +596,12 @@ export default function Home() {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="w-full px-4 py-2 bg-neutral-800 border border-neutral-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-white"
+                  className="w-full px-4 py-2 bg-neutral-800 border border-neutral-700 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 text-white"
                 />
               </div>
               <button
                 type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300"
+                className="w-full bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300"
               >
                 Subscribe
               </button>
