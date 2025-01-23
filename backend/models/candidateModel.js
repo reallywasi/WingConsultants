@@ -12,6 +12,10 @@ const candidateSchema = new mongoose.Schema({
   skills: { type: [String], required: true },
   expectedSalary: { type: Number },
   resumeUrl: { type: String },
+  jobId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Employer",  // Assuming "Employer" is your model name
+  }
 }, { timestamps: true });
 
 // Export Model

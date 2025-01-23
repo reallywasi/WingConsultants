@@ -9,6 +9,7 @@ const employerSchema = new mongoose.Schema({
   jobDescription: { type: String, required: true },
   budgetRange: { type: String, required: true },
   jobType: { type: String, required: true },
+  
 }, { timestamps: true });
 
 module.exports = mongoose.model("Employer", employerSchema);
