@@ -58,4 +58,29 @@ const getEmployerById = async (req, res) => {
 };
 
 
-module.exports = { addEmployerRequirement, getAllEmployerRequirements , getEmployerById};
+
+
+const deleteEmployerById = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const deletedEmployer = await Employer.findByIdAndDelete(id);
+
+    if (!deletedEmployer) {
+      return res.status(404).json({ message: "Employer not found" });
+    }
+
+    res.status(200).json({ message: "Employer requirement deleted successfully" });
+  } catch (error) {
+    res.status(500).json({ message: "Error deleting employer", error: error.message });
+  }
+};
+
+
+
+
+
+
+module.exports = { addEmployerRequirement, getAllEmployerRequirements , getEmployerById,  deleteEmployerById,};
+
+
+// C:\Users\reall\OneDrive\Desktop\WingConsultants\wings fr\backend\controllers\employerController.js

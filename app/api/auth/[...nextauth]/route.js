@@ -47,3 +47,6 @@ const authOptions = {
 const handler = NextAuth(authOptions);
 
 export { handler as GET, handler as POST };
+
+
+//that's my C:\Users\reall\OneDrive\Desktop\WingConsultants\wings fr\app\api\auth\[...nextauth]\route.js

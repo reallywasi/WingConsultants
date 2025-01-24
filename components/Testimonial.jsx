@@ -50,11 +50,11 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-between p-10 bg-gradient-to-r from-indigo-50 via-white to-indigo-50 rounded-3xl shadow-2xl space-y-8 lg:space-y-0">
+    <div className="flex flex-col lg:flex-row items-center justify-between p-10 bg-gradient-to-r from-yellow-50 via-white to-yellow-50 rounded-3xl shadow-2xl space-y-8 lg:space-y-0">
       {/* Testimonial Slider */}
       <div className="relative flex w-full lg:w-2/3 items-center">
         <button
-          className="absolute left-0 bg-indigo-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-indigo-700 hover:shadow-2xl transition-all duration-300 z-10"
+          className="absolute left-0 bg-yellow-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-yellow-700 hover:shadow-2xl transition-all duration-300 z-10"
           onClick={handlePrev}
         >
           &lt;
@@ -69,10 +69,10 @@ const TestimonialSlider = () => {
                 <img
                   src={testimonial.avatar}
                   alt={testimonial.name}
-                  className="w-14 h-14 rounded-full border-2 border-indigo-500"
+                  className="w-14 h-14 rounded-full border-2 border-yellow-500"
                 />
                 <div>
-                  <h3 className="text-xl font-semibold text-indigo-600">{testimonial.name}</h3>
+                  <h3 className="text-xl font-semibold text-yellow-600">{testimonial.name}</h3>
                   <p className="text-sm text-gray-500 italic">{testimonial.position}</p>
                 </div>
               </div>
@@ -105,7 +105,7 @@ const TestimonialSlider = () => {
           ))}
         </div>
         <button
-          className="absolute right-0 bg-indigo-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-indigo-700 hover:shadow-2xl transition-all duration-300 z-10"
+          className="absolute right-0 bg-yellow-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-yellow-700 hover:shadow-2xl transition-all duration-300 z-10"
           onClick={handleNext}
         >
           &gt;

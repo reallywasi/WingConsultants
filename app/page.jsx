@@ -1,22 +1,112 @@
+"use client"
 import UserInfo from "@/components/UserInfo";
 import JobCard from "@/components/JobCard";
 import Testimonial from "@/components/Testimonial";
-
+import Link from "next/link";
 export default function Home() {
   return (
     <div className="relative h-screen -mt-24">
       {/* <UserInfo /> */}
       {/* <LandingPage/> */}
-  <JobCard   className="my-10" />
+
+      <div className="w-full h-[80vh] px-4 my-20 bg-neutral-900 p-20 sm:px-6 lg:px-8 py-12 flex items-center justify-center">
+      <div className="text-center">
+    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in">
+      Your Career Journey <br />
+      <span className="text-yellow-600 animate-gradient-x">Starts Here</span>
+    </h1>
+
+    <p className="text-lg text-gray-300 mb-8">
+      Let <span className="font-semibold text-yellow-500">Wing Consultants</span> help you find your dream job or the perfect candidate.
+    </p>
+
+    <div className="max-w-3xl mx-auto mt-8 relative">
+      <form className="flex flex-col md:flex-row gap-4 items-center justify-center">
+        <div className="relative flex-1">
+          <input
+            type="text"
+            placeholder="Search for jobs, companies, or keywords..."
+            className="w-full px-6 py-4 pl-12 rounded-lg text-lg border-2 border-yellow-500 focus:border-yellow-600 focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 transition-all duration-300 bg-white/95 backdrop-blur-sm"
+            onFocus={(e) => e.target.classList.add("scale-105")}
+            onBlur={(e) => e.target.classList.remove("scale-105")}
+          />
+          <span className="absolute left-4 top-1/2 transform -translate-y-1/2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6 text-gray-400"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              ></path>
+            </svg>
+          </span>
+        </div>
+<Link href="/jobs"> 
+<button className="px-8 py-4 bg-yellow-600 hover:bg-yellow-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg text-lg group">
+          <span className="group-hover:translate-x-1 inline-block transition-transform">
+            Find Jobs
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 inline-block ml-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              ></path>
+            </svg>
+          </span>
+        </button>
+</Link>
+       
+      </form>
+
+      <div className="mt-6 text-gray-300 flex flex-wrap justify-center gap-4">
+        <span className="text-sm">Popular searches:</span>
+        <a
+          href="#"
+          className="text-sm hover:text-yellow-400 transition-colors hover:scale-110 transform inline-block"
+        >
+          Software Engineer
+        </a>
+        <a
+          href="#"
+          className="text-sm hover:text-yellow-400 transition-colors hover:scale-110 transform inline-block"
+        >
+          Product Manager
+        </a>
+        <a
+          href="#"
+          className="text-sm hover:text-yellow-400 transition-colors hover:scale-110 transform inline-block"
+        >
+          Data Scientist
+        </a>
+        <a
+          href="#"
+          className="text-sm hover:text-yellow-400 transition-colors hover:scale-110 transform inline-block"
+        >
+          UX Designer
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
+{/* section lower to hero */}
 
 
-
- {/* section lower to hero */}
-
-
- <section id="services" className="bg-white py-20">
+<section id="services" className="bg-white py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate__animated animate__fadeIn">
           <h2 className="text-4xl font-bold text-neutral-900 mb-4">Our Services</h2>
@@ -245,6 +335,13 @@ export default function Home() {
         </div>
       </div>
     </section>
+  <JobCard   className="my-10" />
+
+
+  
+
+
+ 
 
 
 
@@ -335,20 +432,171 @@ export default function Home() {
         </div>
 
         <div className="text-center mt-16">
-          <a
-            href="#candidateportal"
+          <Link
+            href="/jobs"
             className="inline-flex items-center bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300 animate__animated animate__pulse animate__infinite"
           >
             Start Your Journey
             <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </section>
 
+    <section id="candidateportal" className="bg-white py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12 animate__animated animate__fadeIn">
+          <h2 className="text-4xl font-bold text-neutral-900 mb-4">Candidate Portal</h2>
+          <p className="text-lg text-gray-600">Submit your profile and let us help you find your dream role</p>
+        </div>
 
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="animate__animated animate__fadeInLeft">
+            <form id="candidate-form" className="space-y-6">
+              <div className="bg-neutral-50 p-8 rounded-xl shadow-lg">
+                <h3 className="text-2xl font-semibold mb-6">Personal Information</h3>
+
+                <div className="space-y-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-1">First Name*</label>
+                      <input type="text" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-600 focus:border-yellow-600" />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-1">Last Name*</label>
+                      <input type="text" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-600 focus:border-yellow-600" />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Email Address*</label>
+                    <input type="email" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-600 focus:border-yellow-600" />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Phone Number*</label>
+                    <input type="tel" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-600 focus:border-yellow-600" />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Current Location*</label>
+                    <input type="text" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-600 focus:border-yellow-600" />
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-neutral-50 p-8 rounded-xl shadow-lg">
+                <h3 className="text-2xl font-semibold mb-6">Professional Details</h3>
+
+                <div className="space-y-4">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Years of Experience*</label>
+                    <select required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-600 focus:border-yellow-600">
+                      <option value="">Select Experience</option>
+                      <option value="0-2">0-2 years</option>
+                      <option value="2-5">2-5 years</option>
+                      <option value="5-8">5-8 years</option>
+                      <option value="8+">8+ years</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Current Role*</label>
+                    <input type="text" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-600 focus:border-yellow-600" />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Skills (comma separated)*</label>
+                    <input type="text" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-600 focus:border-yellow-600" placeholder="e.g., React, Node.js, Python" />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Expected Salary (Annual in USD)*</label>
+                    <input type="text" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-600 focus:border-yellow-600" />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Resume Upload*</label>
+                    <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-lg">
+                      <div className="space-y-1 text-center">
+                        <svg className="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48">
+                          <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                        <div className="flex text-sm text-gray-600">
+                          <label className="relative cursor-pointer bg-white rounded-md font-medium text-yellow-600 hover:text-yellow-600 focus-within:outline-none">
+                            <span>Upload a file</span>
+                            <input id="file-upload" name="file-upload" type="file" className="sr-only" accept=".pdf,.doc,.docx" />
+                          </label>
+                          <p className="pl-1">or drag and drop</p>
+                        </div>
+                        <p className="text-xs text-gray-500">PDF, DOC up to 10MB</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="text-center">
+                <button type="submit" className="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300 animate__animated animate__pulse animate__infinite">
+                  Submit Application
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div className="animate__animated animate__fadeInRight">
+            <div className="bg-neutral-50 p-8 rounded-xl shadow-lg sticky top-24">
+              <h3 className="text-2xl font-semibold mb-6">Application Tips</h3>
+              <div className="space-y-6">
+                <div className="flex items-start">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-yellow-600 text-white">
+                      <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="ml-4">
+                    <h4 className="text-lg font-medium text-neutral-900">Update Your Resume</h4>
+                    <p className="mt-2 text-gray-600">Ensure your resume is up-to-date and highlights relevant experience and skills.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-yellow-600 text-white">
+                      <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="ml-4">
+                    <h4 className="text-lg font-medium text-neutral-900">Be Specific</h4>
+                    <p className="mt-2 text-gray-600">List specific technical skills and quantify your achievements where possible.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-yellow-600 text-white">
+                      <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="ml-4">
+                    <h4 className="text-lg font-medium text-neutral-900">Response Time</h4>
+                    <p className="mt-2 text-gray-600">We typically respond within 48 hours to all applications.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 

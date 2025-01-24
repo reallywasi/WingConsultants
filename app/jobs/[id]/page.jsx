@@ -69,7 +69,7 @@
 //       </div>
 //       <button
 //         onClick={() => router.push("/jobs")}
-//         className="bg-blue-500 text-white py-2 px-4 rounded mt-4 hover:bg-blue-600"
+//         className="bg-yellow-500 text-white py-2 px-4 rounded mt-4 hover:bg-yellow-600"
 //       >
 //         Back to Jobs
 //       </button>
@@ -148,12 +148,16 @@ const JobDetails = () => {
 
 <div className="flex justify-between items-center mb-6">
   {/* Job Title - Centered */}
-  <h1 className="text-4xl font-extrabold text-gray-900 mx-auto">{jobDetails.position}</h1>
+  <h1 className="text-4xl font-extrabold text-gray-900 text-center underline decoration-yellow-500 decoration-4 underline-offset-4 mx-auto">
+  {jobDetails.position}
+</h1>
+
+
 
   {/* Back to Jobs Button */}
   <button
     onClick={() => router.push("/jobs")}
-    className="bg-blue-600 text-white py-2 px-4 rounded-lg shadow-md transform hover:scale-105 transition-all duration-300 ease-in-out"
+    className="bg-yellow-600 text-white py-2 px-4 rounded-lg shadow-md transform hover:scale-105 transition-all duration-300 ease-in-out"
   >
     <span className="font-semibold text-lg">Back to Jobs</span>
   </button>
@@ -163,46 +167,51 @@ const JobDetails = () => {
   <div className="grid grid-cols-5 gap-6">
 
     {/* Left section (Job Details) - 40% width */}
-    <div className="col-span-2 bg-gray-50 p-8 rounded-lg shadow-2xl border-2 border-gray-300">
-  <h2 className="text-3xl font-extrabold text-gray-800 mb-6">Job Details</h2>
+    <div className="col-span-2 bg-gradient-to-br from-gray-50 to-gray-200 p-6 rounded-xl shadow-2xl border-4 border-gray-300 max-h-[80vh] overflow-auto">
+  <h2 className="text-3xl font-bold text-gray-900 mb-4 border-b-4 border-yellow-500 inline-block pb-1">Job Details</h2>
 
-  <p className="text-lg mb-4">
-    <span className="font-bold text-indigo-600">Company:</span> 
-    <span className="text-gray-800 ml-2">{jobDetails.companyName}</span>
-  </p>
+  <div className="mb-1 border-b border-gray-300 pb-3">
+    <p className="text-lg font-semibold text-yellow-700 mb-0.5">Company:</p>
+    <p className="text-base text-gray-800 bg-gray-100 p-2 rounded-md">{jobDetails.companyName}</p>
+  </div>
 
-  <p className="text-lg mb-4">
-    <span className="font-bold text-indigo-600">Contact:</span> 
-    <span className="text-gray-800 ml-2">{jobDetails.contactPerson}</span>
-  </p>
+  <div className="mb-1 border-b border-gray-300 pb-3">
+    <p className="text-lg font-semibold text-yellow-700 mb-0.5">Contact:</p>
+    <p className="text-base text-gray-800 bg-gray-100 p-2 rounded-md">{jobDetails.contactPerson}</p>
+  </div>
 
-  <p className="text-lg mb-4">
-    <span className="font-bold text-indigo-600">Business Email:</span> 
-    <span className="text-gray-800 ml-2">{jobDetails.businessEmail}</span>
-  </p>
+  <div className="mb-1 border-b border-gray-300 pb-3">
+    <p className="text-lg font-semibold text-yellow-700 mb-0.5">Business Email:</p>
+    <p className="text-base text-gray-800 bg-gray-100 p-2 rounded-md">{jobDetails.businessEmail}</p>
+  </div>
 
-  <p className="text-lg mb-6">
-    <span className="font-bold text-indigo-600">Budget Range:</span> 
-    <span className="text-gray-800 ml-2">{jobDetails.budgetRange}</span>
-  </p>
+  <div className="mb-1 border-b border-gray-300 pb-3">
+    <p className="text-lg font-semibold text-yellow-700 mb-0.5">Budget Range:</p>
+    <p className="text-base text-gray-800 bg-gray-100 p-2 rounded-md">{jobDetails.budgetRange}</p>
+  </div>
 
-  <h2 className="text-3xl font-extrabold text-gray-800 mb-6">Skills & Description</h2>
+  <h2 className="text-3xl font-bold text-gray-900 mb-4 border-b-4 border-yellow-500 inline-block pb-1">Skills & Description</h2>
 
-  <p className="text-lg mb-4">
-    <span className="font-bold text-indigo-600">Required Skills:</span> 
-    <span className="text-gray-800 ml-2">{jobDetails.requiredSkills}</span>
-  </p>
+  <div className="mb-1 border-b border-gray-300 pb-3">
+    <p className="text-lg font-semibold text-yellow-700 mb-0.5">Required Skills:</p>
+    <p className="text-base text-gray-800 bg-gray-100 p-2 rounded-md">{jobDetails.requiredSkills}</p>
+  </div>
 
-  <p className="text-lg mb-4">
-    <span className="font-bold text-indigo-600">Job Type:</span> 
-    <span className="text-gray-800 ml-2">{jobDetails.jobType}</span>
-  </p>
+  <div className="mb-1 border-b border-gray-300 pb-3">
+    <p className="text-lg font-semibold text-yellow-700 mb-1">Job Type:</p>
+    <p className="text-base text-gray-800 bg-gray-100 p-2 rounded-md">{jobDetails.jobType}</p>
+  </div>
 
-  <div className="text-lg mb-6">
-    <span className="font-bold text-indigo-600">Job Description:</span>
-    <p className="mt-2 text-gray-800 ml-2">{jobDetails.jobDescription}</p>
+  <div className="mb-1">
+    <p className="text-lg font-semibold text-yellow-700 mb-1">Job Description:</p>
+    <p className="text-sm text-gray-800 bg-gray-100 p-3 rounded-md shadow-inner border border-gray-300">
+      {jobDetails.jobDescription}
+    </p>
   </div>
 </div>
+
+
+
 
 
 
@@ -210,7 +219,9 @@ const JobDetails = () => {
     <div className="col-span-3 bg-white p-6 rounded-lg shadow-lg border border-gray-200 max-h-[700px] overflow-y-auto relative">
      
 
-    <h2 className="text-3xl font-bold text-gray-800 mb-6">Candidate Form</h2>      <CandidateForm />
+    {/* <h2 className="text-3xl font-bold text-gray-800 mb-6">Candidate Form</h2>    */}
+       <CandidateForm jobId={id} />
+
     </div>
   </div>
 </div>

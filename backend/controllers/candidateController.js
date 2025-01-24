@@ -14,6 +14,9 @@ const submitCandidateForm = async (req, res) => {
       skills,
       expectedSalary,
       resumeUrl,
+      linkedinUrl,
+      githubUrl,
+      jobId
     } = req.body;
 
     // Create a new candidate instance
@@ -28,6 +31,9 @@ const submitCandidateForm = async (req, res) => {
       skills,
       expectedSalary,
       resumeUrl,
+      linkedinUrl,
+      githubUrl,
+      jobId
     });
 
     // Save candidate data to the database
@@ -61,4 +67,48 @@ const getCandidateById = async (req, res) => {
 };
 
 
-module.exports = { submitCandidateForm , getCandidateById  };
+
+// Handle getting all candidates by jobId
+const getCandidatesByJobId = async (req, res) => {
+  try {
+    const jobId = req.params.jobId; // Get the jobId from the request parameters
+
+    // Find candidates with the specified jobId
+    const candidates = await Candidate.find({ jobId }).populate('jobId');
+
+    // If no candidates found
+    if (!candidates || candidates.length === 0) {
+      return res.status(404).json({ message: 'No candidates found for the specified jobId' });
+    }
+
+    // Return the list of candidates
+    res.status(200).json({ candidates });
+  } catch (error) {
+    res.status(500).json({ message: 'Server Error', error: error.message });
+  }
+};
+
+
+const getAllCandidates = async (req, res) => {
+  try {
+    // Retrieve all candidates from the database
+    const candidates = await Candidate.find();
+
+    // If no candidates found
+    if (!candidates || candidates.length === 0) {
+      return res.status(404).json({ message: 'No candidates found' });
+    }
+
+    // Return the list of all candidates
+    res.status(200).json({ candidates });
+  } catch (error) {
+    res.status(500).json({ message: 'Server Error', error: error.message });
+  }
+};
+
+
+module.exports = { submitCandidateForm , getCandidateById ,   getCandidatesByJobId ,getAllCandidates
+};
+
+
+// C:\Users\reall\OneDrive\Desktop\WingConsultants\wings fr\backend\controllers\candidateController.js

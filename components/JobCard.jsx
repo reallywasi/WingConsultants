@@ -60,7 +60,7 @@
 //           <div className="text-gray-600">
 //             <span className="font-semibold text-neutral-900">{job.budgetRange}</span> / year
 //           </div>
-//           <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors duration-300">
+//           <button className="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-2 rounded-lg transition-colors duration-300">
 //             Apply Now
 //           </button>
 //         </div>
@@ -92,14 +92,14 @@
 //                   <input
 //                     type="text"
 //                     placeholder="Search jobs..."
-//                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+//                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500"
 //                     value={search}
 //                     onChange={(e) => setSearch(e.target.value)}
 //                   />
 //                 </div>
 //                 <div className="flex-1 min-w-[200px]">
 //                   <select
-//                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+//                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500"
 //                     value={category}
 //                     onChange={(e) => setCategory(e.target.value)}
 //                   >
@@ -113,7 +113,7 @@
 //                 </div>
 //                 <div className="flex-1 min-w-[200px]">
 //                   <select
-//                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+//                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500"
 //                     value={experience}
 //                     onChange={(e) => setExperience(e.target.value)}
 //                   >
@@ -218,7 +218,7 @@ const JobListings = () => {
             </div>
             <button
               onClick={handleApplyClick} // On click, redirect to job detail page
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors duration-300"
+              className="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-2 rounded-lg transition-colors duration-300"
             >
               Apply Now
             </button>
@@ -246,20 +246,21 @@ const JobListings = () => {
           </div>
 
           <div className="mb-8">
+          
             <div className="bg-white rounded-lg shadow p-4 animate__animated animate__fadeIn">
               <div className="flex flex-wrap gap-4 items-center justify-between">
                 <div className="flex-1 min-w-[200px]">
                   <input
                     type="text"
                     placeholder="Search jobs..."
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500"
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
                   />
                 </div>
                 <div className="flex-1 min-w-[200px]">
                   <select
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500"
                     value={category}
                     onChange={(e) => setCategory(e.target.value)}
                   >
@@ -273,7 +274,7 @@ const JobListings = () => {
                 </div>
                 <div className="flex-1 min-w-[200px]">
                   <select
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500"
                     value={experience}
                     onChange={(e) => setExperience(e.target.value)}
                   >

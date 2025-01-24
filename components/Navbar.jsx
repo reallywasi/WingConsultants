@@ -315,30 +315,24 @@ export default function Navbar() {
   };
 
   return (
-    <div className="relative p-4 flex justify-between items-center shadow-md bg-white z-30">
-      <Link className="font-bold text-lg text-blue-700" href={"/"}>
-        Wings
-      </Link>
-
+<div className="relative px-4 py-1 flex justify-between items-center shadow-md bg-black z-30 border-b border-gray-700"> 
+<div className="flex items-center"> {/* Added flex to align items side by side */}
+    <Link className="font-bold text-lg text-blue-700" href={"/"}>
+      <img
+        src="https://i.ibb.co/8rQdq0P/your-logo.png" // Replace this URL with your logo URL
+        alt="Logo"
+        className="w-16 h-auto" // You can adjust the width and height accordingly
+      />
+    </Link>
+    <div className="text-white ml-2"> {/* Added margin-left to add space between the logo and text */}
+      Wings
+    </div>
+  </div>
       {/* Desktop Navigation */}
       <div className="hidden md:flex space-x-6 items-center">
         {status === "authenticated" && (
           <>
-            <Link href="/profile" className="text-gray-700 hover:text-blue-700">
-              Profile
-            </Link>
-            <Link href="/tests" className="text-gray-700 hover:text-blue-700">
-              Tests
-            </Link>
-            <Link href="/results" className="text-gray-700 hover:text-blue-700">
-              Results
-            </Link>
-            <Link href="/upcoming-tests" className="text-gray-700 hover:text-blue-700">
-              Upcoming Tests
-            </Link>
-            <Link href="/rankings" className="text-gray-700 hover:text-blue-700">
-              Rankings
-            </Link>
+           
             <button
               onClick={() => signOut()}
               className="bg-slate-900 text-white px-4 py-2 rounded-md"
@@ -460,3 +454,6 @@ export default function Navbar() {
     </div>
   );
 }
+
+
+

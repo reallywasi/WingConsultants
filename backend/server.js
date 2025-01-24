@@ -22,3 +22,5 @@ app.use('/api/candidate', candidateRoutes);
 // Port and Server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+//C:\Users\reall\OneDrive\Desktop\WingConsultants\wings fr\backend\server.js
