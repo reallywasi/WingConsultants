@@ -14,6 +14,8 @@ const submitCandidateForm = async (req, res) => {
       skills,
       expectedSalary,
       resumeUrl,
+      linkedinUrl,
+      githubUrl,
       jobId
     } = req.body;
 
@@ -29,6 +31,8 @@ const submitCandidateForm = async (req, res) => {
       skills,
       expectedSalary,
       resumeUrl,
+      linkedinUrl,
+      githubUrl,
       jobId
     });
 
@@ -85,10 +89,25 @@ const getCandidatesByJobId = async (req, res) => {
 };
 
 
+const getAllCandidates = async (req, res) => {
+  try {
+    // Retrieve all candidates from the database
+    const candidates = await Candidate.find();
+
+    // If no candidates found
+    if (!candidates || candidates.length === 0) {
+      return res.status(404).json({ message: 'No candidates found' });
+    }
+
+    // Return the list of all candidates
+    res.status(200).json({ candidates });
+  } catch (error) {
+    res.status(500).json({ message: 'Server Error', error: error.message });
+  }
+};
 
 
-
-module.exports = { submitCandidateForm , getCandidateById ,   getCandidatesByJobId 
+module.exports = { submitCandidateForm , getCandidateById ,   getCandidatesByJobId ,getAllCandidates
 };
 
 

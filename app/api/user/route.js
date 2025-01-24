@@ -8,3 +8,6 @@ export async function POST(request) {
   await User.create({ name, email });
   return NextResponse.json({ message: "User Registered" }, { status: 201 });
 }
+
+
+// that's my C:\Users\reall\OneDrive\Desktop\WingConsultants\wings fr\app\api\user\route.js

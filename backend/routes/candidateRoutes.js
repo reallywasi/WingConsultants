@@ -9,9 +9,10 @@
 
 
 const express = require('express');
-const { submitCandidateForm, getCandidateById , getCandidatesByJobId  , } = require('../controllers/candidateController');
+const { submitCandidateForm, getCandidateById , getCandidatesByJobId  , getAllCandidates } = require('../controllers/candidateController');
 
 const router = express.Router();
+router.get('/candidates', getAllCandidates); // Add this route
 
 // POST request for submitting a candidate form
 router.post('/apply', submitCandidateForm);

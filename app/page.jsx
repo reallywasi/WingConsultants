@@ -2,7 +2,7 @@
 import UserInfo from "@/components/UserInfo";
 import JobCard from "@/components/JobCard";
 import Testimonial from "@/components/Testimonial";
-
+import Link from "next/link";
 export default function Home() {
   return (
     <div className="relative h-screen -mt-24">
@@ -47,8 +47,8 @@ export default function Home() {
             </svg>
           </span>
         </div>
-
-        <button className="px-8 py-4 bg-yellow-600 hover:bg-yellow-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg text-lg group">
+<Link href="/jobs"> 
+<button className="px-8 py-4 bg-yellow-600 hover:bg-yellow-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg text-lg group">
           <span className="group-hover:translate-x-1 inline-block transition-transform">
             Find Jobs
             <svg
@@ -67,6 +67,8 @@ export default function Home() {
             </svg>
           </span>
         </button>
+</Link>
+       
       </form>
 
       <div className="mt-6 text-gray-300 flex flex-wrap justify-center gap-4">
@@ -430,15 +432,15 @@ export default function Home() {
         </div>
 
         <div className="text-center mt-16">
-          <a
-            href="#candidateportal"
+          <Link
+            href="/jobs"
             className="inline-flex items-center bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300 animate__animated animate__pulse animate__infinite"
           >
             Start Your Journey
             <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

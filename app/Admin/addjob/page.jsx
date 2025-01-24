@@ -59,12 +59,12 @@ const EmployerZone = () => {
 
 
   return (
-    <section id="employerzone" className=" text-black py-4 h-screen">
+    <section id="employerzone" className=" text-black py-2 h-screen">
       <div className="max-w-7xl  px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-4 animate__animated animate__fadeIn">
-          <h2 className="text-4xl font-bold mb-6">Employer Zone</h2>
+        <div className="text-center mb-1 animate__animated animate__fadeIn">
+          <h2 className="text-4xl font-bold mb-1">Employer Zone</h2>
           <p className="text-lg text-gray-800">
-            Partner with us to find your next tech superstar
+            Post a job to find your next <span className="text-yellow-600">tech superstar</span>
           </p>
         </div>
 
@@ -150,7 +150,7 @@ const EmployerZone = () => {
           {/* Right Section */}
 
 
-          <div className="animate__animated animate__fadeInRight h-[80vh] overflow-y-auto">
+          <div className="animate__animated animate__fadeInRight h-[75vh] overflow-y-auto">
             <div className="bg-neutral-800 rounded-xl p-8 text-white">
               <h3 className="text-2xl font-bold mb-6">Post Your <span className="text-yellow-600">Requirnments</span></h3>
               <form className="space-y-6" onSubmit={handleSubmit}>

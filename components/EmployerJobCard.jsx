@@ -79,12 +79,14 @@ const JobListings = () => {
               <span className="font-semibold text-neutral-900">{job.budgetRange}</span> / year
             </div>
             <div className="flex gap-4">
-              <button
-                onClick={handleCloseJob} // On click, close the job
-                className="bg-red-900 hover:bg-red-800 text-white px-4 py-2 rounded-lg transition-colors duration-300"
-              >
-                Close Job
-              </button>
+            <button
+  onClick={handleCloseJob} // On click, close the job
+  className="bg-gray-200 border-2 border-yellow-600 text-gray-900 hover:bg-gray-300 hover:border-black hover:text-black px-4 py-2 rounded-lg transition-colors duration-300"
+>
+  Close Job
+</button>
+
+
               <button
                 onClick={handleViewApplicants} // On click, view job applicants
                 className="bg-yellow-600 hover:bg-yellow-700 text-white px-4 py-2 rounded-lg transition-colors duration-300"
@@ -110,10 +112,7 @@ const JobListings = () => {
     <div id="root">
       <section id="joblistings" className="bg-neutral-100 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 animate__animated animate__fadeIn">
-            <h2 className="text-4xl font-bold text-neutral-900 mb-4">Current Openings</h2>
-            <p className="text-lg text-gray-600">Find your next opportunity in tech</p>
-          </div>
+         
 
           <div className="mb-8">
             <div className="bg-white rounded-lg shadow p-4 animate__animated animate__fadeIn">

@@ -401,7 +401,8 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation'
-
+import { AiFillLinkedin } from 'react-icons/ai';
+import { FaGithub } from 'react-icons/fa';
 // Main Component
 const JobAndApplicants = () => {
   const { id } = useParams();
@@ -486,18 +487,34 @@ const JobAndApplicants = () => {
                 onClick={() => handleApplicantClick(applicant)}
                 className="bg-white hover:bg-gray-50 cursor-pointer p-8 rounded-lg shadow-lg transition-all border border-gray-200"
               >
-                <div className="flex justify-between items-center">
-                  <div>
-                    <p className="text-xl font-semibold text-gray-800">{applicant.firstName} {applicant.lastName}</p>
-                    <p className="text-gray-600">{applicant.currentRole} - {applicant.experience}</p>
-                  </div>
-                  <button
-                    onClick={(e) => { e.stopPropagation(); handleApplicantClick(applicant); }}
-                    className="text-yellow-700 hover:text-yellow-600 font-semibold text-sm py-2 px-4 rounded-lg border-2 border-yellow-700 hover:border-yellow-600"
-                  >
-                    View Details
-                  </button>
-                </div>
+           <div className="flex justify-between items-center">
+  <div>
+    <p className="text-xl font-semibold text-gray-800">{applicant.firstName} {applicant.lastName}</p>
+    <p className="text-gray-600">{applicant.currentRole} - {applicant.experience}</p>
+  </div>
+
+  <div className="flex items-center space-x-4">
+   {/* LinkedIn Icon with Circular Hover Effect */}
+   <a href={applicant.linkedinUrl} target="_blank" rel="noopener noreferrer" className="group">
+      <AiFillLinkedin className="w-8 h-8 text-blue-700 group-hover:bg-gray-200 group-hover:rounded-full p-1 transition-all duration-100" />
+    </a>
+    {/* GitHub Icon with Circular Hover Effect */}
+    <a href={applicant.githubUrl} target="_blank" rel="noopener noreferrer" className="group">
+      <FaGithub className="w-8 h-8 text-gray-800 group-hover:bg-gray-200 group-hover:rounded-full p-1 transition-all duration-100" />
+    </a>
+
+    {/* View Details Button */}
+    <button
+      onClick={(e) => { e.stopPropagation(); handleApplicantClick(applicant); }}
+      className="text-yellow-700 hover:text-yellow-600 font-semibold text-sm py-2 px-4 rounded-lg border-2 border-yellow-700 hover:border-yellow-600"
+    >
+      View Details
+    </button>
+  </div>
+</div>
+
+
+
               </div>
             ))
           ) : (

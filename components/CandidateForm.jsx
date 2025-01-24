@@ -458,6 +458,8 @@ const CandidateForm = ({ jobId }) => {
     skills: "",
     expectedSalary: "",
     resumeUrl: "",
+    linkedinUrl:"",
+    githubUrl:"",
     jobId: jobId,
   });
 
@@ -505,6 +507,8 @@ const CandidateForm = ({ jobId }) => {
           skills: "",
           expectedSalary: "",
           resumeUrl: "",
+          linkedinUrl:"",
+          githubUrl:"",
           jobId: jobId,
         });
       } else {
@@ -649,6 +653,8 @@ const CandidateForm = ({ jobId }) => {
                 placeholder="e.g., React, Node.js, Python"
               />
             </div>
+
+
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Expected Salary (Annual in USD)*
@@ -662,7 +668,36 @@ const CandidateForm = ({ jobId }) => {
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500"
               />
             </div>
+            <div>
+  <label className="block text-sm font-medium text-gray-700 mb-1">
+    LinkedIn URL
+  </label>
+  <input
+    type="url"
+    name="linkedinUrl"
+    value={formData.linkedinUrl}
+    onChange={handleChange}
+    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500"
+  />
+</div>
+
+<div>
+  <label className="block text-sm font-medium text-gray-700 mb-1">
+    GitHub URL
+  </label>
+  <input
+    type="url"
+    name="githubUrl"
+    value={formData.githubUrl}
+    onChange={handleChange}
+    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500"
+  />
+</div>
+
+
           </div>
+
+
         </div>
 
         {/* Submit Button */}
